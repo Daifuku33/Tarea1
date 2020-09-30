@@ -23,7 +23,7 @@ public class Producto {
 	
 	@ManyToOne
 	@JoinColumn(name = "idMarca", nullable = false, foreignKey = @ForeignKey(name = "FK_idMarca_producto"))
-	private Marca marca; 
+	private Marca idMarca; 
 	
 	@Column(name = "valor_producto", length = 6)
 	private double valorProducto;
@@ -45,11 +45,11 @@ public class Producto {
 	}
 
 	public Marca getMarca() {
-		return marca;
+		return idMarca;
 	}
 
 	public void setMarca(Marca marca) {
-		this.marca = marca;
+		this.idMarca = marca;
 	}
 
 	public double getValorProducto() {

@@ -17,27 +17,27 @@ public class CompraProducto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id_producto;
+	private int idProducto;
 
 	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "id_venta", nullable = false, foreignKey = @ForeignKey(name = "FK_compra_detalle"))
-	private Venta venta;
+	private Venta idVenta;
 
 	public int getId_producto() {
-		return id_producto;
+		return idProducto;
 	}
 
 	public void setId_producto(int id_producto) {
-		this.id_producto = id_producto;
+		this.idProducto = id_producto;
 	}
 
 	public Venta getVenta() {
-		return venta;
+		return idVenta;
 	}
 
 	public void setVenta(Venta venta) {
-		this.venta = venta;
+		this.idVenta = venta;
 	} 
 	
 	
