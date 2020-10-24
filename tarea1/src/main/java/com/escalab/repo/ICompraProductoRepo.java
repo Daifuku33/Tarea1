@@ -1,5 +1,12 @@
 package com.escalab.repo;
 
-public interface ICompraProductoRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.escalab.model.CompraProducto;
+
+public interface ICompraProductoRepo extends JpaRepository<CompraProducto, Integer>{
+	
+	//NO CRUD, ESPERAR 
 
 }
+

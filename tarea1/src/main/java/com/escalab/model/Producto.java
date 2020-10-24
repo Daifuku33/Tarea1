@@ -60,6 +60,4 @@ public class Producto {
 		this.valorProducto = valorProducto;
 	} 
 	
-	
-	
 }
